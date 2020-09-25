@@ -28,6 +28,12 @@ class Game {
         $('#game').addClass('stop');
         this.stoped = true;
     }
+
+    addScore() {
+        this.score++;
+        this.time++;
+        this.time++;
+    }
 }
 
 const SELECTED = 'selected';
@@ -80,9 +86,8 @@ $(() => {
         if (!woolf.hasClass(ACTIVE)) {
             g.stop();
         } else {
-            g.score++;
-            g.time--;
-            $('.score').html(g.score + ' / ' +  g.time);
+            g.addScore();
+            $('.score').html(g.score);
         }
     })
 
