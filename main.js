@@ -42,8 +42,6 @@ function random(min, max) {
     return Math.round(rand);
 }
 
-const LEFT_CODE = 'KeyS';
-const RIGHT_CODE = 'KeyA';
 const F_1 = 'KeyQ';
 const F_2 = 'KeyA';
 const F_3 = 'KeyP';
