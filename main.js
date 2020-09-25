@@ -31,8 +31,7 @@ class Game {
 
     addScore() {
         this.score++;
-        this.time++;
-        this.time++;
+        this.time -= 3;
     }
 }
 
